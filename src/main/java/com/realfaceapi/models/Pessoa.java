@@ -17,7 +17,6 @@ public class Pessoa implements Serializable {
 	private static final long serialVersionUID = 306411570471828345L;
 
 	private Long id;
-	private Long idFoto;
 	private String nome;
 	
 	@ManyToOne
@@ -31,15 +30,6 @@ public class Pessoa implements Serializable {
 
 	public void setId(Long id) {
 		this.id = id;
-	}
-	
-	@Column(name = "id_foto")
-	public Long getIdFoto() {
-		return idFoto;
-	}
-
-	public void setIdFoto(Long idFoto) {
-		this.idFoto = idFoto;
 	}
 
 	public String getNome() {

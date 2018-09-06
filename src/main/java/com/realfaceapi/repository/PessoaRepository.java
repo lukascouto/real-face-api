@@ -11,5 +11,4 @@ public interface PessoaRepository extends CrudRepository<Pessoa, String> {
 	
 	List<Pessoa> findByIdUsuario(Long idusuario);
 	
-	
 }
