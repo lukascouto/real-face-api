@@ -75,8 +75,8 @@ public class AuthenticationController {
 		response.setData(new TokenDto(token));
 
 		return ResponseEntity.ok(response);
-	}
-
+	}	
+	
 	/**
 	 * Gera um novo token com uma nova data de expiração.
 	 * 

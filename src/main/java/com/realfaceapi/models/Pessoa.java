@@ -18,6 +18,7 @@ public class Pessoa implements Serializable {
 
 	private Long id;
 	private String nome;
+	private Boolean status;
 	
 	@ManyToOne
 	private Long idUsuario;
@@ -38,6 +39,14 @@ public class Pessoa implements Serializable {
 
 	public void setNome(String nome) {
 		this.nome = nome;
+	}
+
+	public Boolean getStatus() {
+		return status;
+	}
+
+	public void setStatus(Boolean status) {
+		this.status = status;
 	}
 
 	@Column(name = "id_usuario")

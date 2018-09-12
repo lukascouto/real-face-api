@@ -60,6 +60,7 @@ public class PessoaController {
 		}
 
 		pessoa.setIdUsuario(usuario.get().getId());
+		pessoa.setStatus(true);
 		pr.save(pessoa);
 		return pessoa.getId();
 		
